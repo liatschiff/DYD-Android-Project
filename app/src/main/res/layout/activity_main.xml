@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    android:background="@drawable/brideaccountt"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/brown"
+        android:fontFamily="casual"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="DYD"
+        android:id="@+id/label"/>
+
+    <!-- Email Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown"
+        android:layout_marginBottom="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown"
+            android:inputType="textEmailAddress"
+            android:fontFamily="casual"
+            android:hint="@string/email"
+            android:textStyle="bold"
+            android:textColorHint="@color/brown"
+            android:id="@+id/sign_in_email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/brown"
+        android:textColor="@color/brown"
+        android:layout_marginBottom="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/brown"
+            android:fontFamily="casual"
+            android:hint="@string/password"
+            android:id="@+id/sign_in_password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/brown"
+        android:fontFamily="casual"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_signin"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:id="@+id/sign_in_btn"/>
+
+    <TextView
+        android:id="@+id/link_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_time"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/radio_group">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/client"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="casual"
+            android:textColor="@color/brown"
+            android:id="@+id/client_choice"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown"
+            android:fontFamily="casual"
+            android:text="@string/professional"
+            android:id="@+id/professional_choice"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/brown"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:background="@drawable/selector_signin"
+            android:id="@+id/sign_up_btn"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

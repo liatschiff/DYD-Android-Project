@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "220893135686",
+    "firebase_url": "https://yodenproject.firebaseio.com",
+    "project_id": "yodenproject",
+    "storage_bucket": "yodenproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220893135686:android:cac22db46aeaa1dd1d9b47",
+        "android_client_info": {
+          "package_name": "com.example.yodenproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220893135686-nild3h65i7fb2kn47ara4601khfgvog6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yodenproject",
+            "certificate_hash": "c9d247bcff9eec4cb6e2a7d3ba8a6f8b48024c09"
+          }
+        },
+        {
+          "client_id": "220893135686-eh5fo0u195tmgllisediiuardqpufaq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcwTVxG85wyIMspgLF0XLOFo6WhbpxnbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220893135686-eh5fo0u195tmgllisediiuardqpufaq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

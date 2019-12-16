@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_height="110dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="4dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="13dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+
+        <com.github.abdularis.civ.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="9dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle"
+            android:padding="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_user"
+            android:id="@+id/image_of_reviewer"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_reviewer_tv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="13dp"
+                android:layout_margin="3dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewer_info_tv"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:id="@+id/image_of_finish_order">
+
+        </ImageView>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

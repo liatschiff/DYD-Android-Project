@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/myaccount_side_drawer_btn"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/messages_side_drawer_btn"
+            android:title="Messages" />
+
+        <item
+            android:id="@+id/activeorder_side_drawer_btn"
+            android:title="Your Active Order" />
+
+        <item
+            android:id="@+id/finishorder_side_drawer_btn"
+            android:title="Your Finish Order" />
+
+        <item
+            android:id="@+id/offer_side_drawer_btn"
+            android:title="Your waiting Offers"
+            android:visible="false"/>
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/sign_out"
+            android:title="Sign out" >
+        </item>
+    </group>
+
+</menu>

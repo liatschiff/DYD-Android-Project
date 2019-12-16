@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="2dp"
+    android:elevation="9dp"
+    app:cardCornerRadius="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#fff">
+
+        <com.github.abdularis.civ.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="9dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle"
+            android:padding="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_user"
+            android:id="@+id/professional_offer_pic"/>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:text="name"
+                android:fontFamily="casual"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/pro_name_tv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:layout_margin="3dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:text="@string/price"
+                android:layout_height="wrap_content"
+                android:id="@+id/relevant_price_tv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:layout_margin="3dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:maxLines="2"
+                android:text="more info"
+                android:layout_height="wrap_content"
+                android:id="@+id/moreInfo_tv"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/view"
+                android:textSize="12sp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:background="@drawable/selectorforall"
+                android:id="@+id/view_btn" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_cancel_black_24dp"
+                android:id="@+id/cancel_btn" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

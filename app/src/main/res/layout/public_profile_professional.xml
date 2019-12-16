@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/coordinator">
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/lightGrey"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/silvergliterdialog_640x361"
+        android:padding="7dp">
+
+        <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/professional_public_profile_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="9dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle"
+            android:padding="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/public_professional_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:text="Joey Tribbiani"
+                android:textColorHint="@color/darkGrey"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textColor="@color/darkGrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/public_professional_location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:fontFamily="sans-serif-light"
+                android:text="new york, usa"
+                android:textAllCaps="true"
+                android:textColor="@color/darkGrey"
+                android:textSize="14sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/public_professional_aboutme_tv"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="vvvkvkvkv"
+                    android:textColorHint="@color/brown"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/add_info"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:gravity="end"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/ic_add_circle_outline_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/lightGrey">
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/prev_works"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/add_photo"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/selectorphoto"
+            android:visibility="invisible"
+            android:layout_marginTop="28dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/previous_work_list"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGrey"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reviews"
+            android:textSize="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="5dp"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_review"
+            android:layout_marginStart="15dp"
+            android:text="@string/add_review"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:background="@drawable/selectorforall"
+            android:visibility="invisible"
+            android:layout_marginTop="28dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/review_list"/>
+
+</LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/message_action"
+            android:id="@+id/fab" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

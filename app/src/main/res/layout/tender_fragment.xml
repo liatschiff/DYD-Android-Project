@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aandroid="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    android:elevation="8dp"
+    app:cardCornerRadius="14dp"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/cloud"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:id="@+id/image_order_in_tender"
+                android:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/order_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/brown"
+                    android:textColor="@color/brown"
+                    android:fontFamily="casual"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_margin="3dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/order_finaldate_tv"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/show_tender_detail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:text="@string/show"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:background="@drawable/selectorforall"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

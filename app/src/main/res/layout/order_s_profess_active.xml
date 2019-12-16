@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_height="350dp"
+    android:layout_width="350dp"
+    android:layout_gravity="center|top"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="12dp"
+    android:elevation="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginTop="6dp"
+            android:id="@+id/image_order"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/view_order_btn"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="start"
+                android:padding="7dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:background="@drawable/selectorforall"
+                android:text="@string/view" />
+
+
+            <Button
+                android:id="@+id/finish_order_btn"
+                android:layout_width="70dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:background="@drawable/selectorforall"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_gravity="end"
+                android:padding="7dp"
+                android:text="@string/finish" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

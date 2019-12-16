@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/brideaccountt"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:text="@string/Your_Dream_Came_True" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/name_design"
+            android:textColorHint="@color/darkGrey"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:id="@+id/order_name_et"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="casual"
+                    android:text="@string/recommand"
+                    android:textColor="@color/darkGrey"
+                    android:textColorHint="@color/brown" />
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/brown"
+                    android:textColor="@color/darkGrey"
+                    android:fontFamily="casual"
+                    android:text="@string/add_sketch" />
+
+        </LinearLayout>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/selectordraw"
+                android:id="@+id/photo_imagebtn"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:text="@string/add_fabrics"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:padding="6dp"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:background="@drawable/selectorforall"
+                android:text="@string/fabrics_btn"
+                android:layout_marginStart="5dp"
+                android:id="@+id/prefer_fabrics_btn"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:layout_marginEnd="10dp"
+                android:text="@string/cleavage" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:entries="@array/cleavageShape_array"
+            android:id="@+id/cleavage_shape_spinner"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:layout_marginEnd="10dp"
+                android:text="@string/back" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:entries="@array/backShape_array"
+            android:id="@+id/back_shape_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:layout_marginEnd="10dp"
+                android:text="@string/dress_length" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/highDress_array"
+            android:id="@+id/longDress_shape_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:layout_marginEnd="10dp"
+                android:text="@string/gloves" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gloves_array"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:id="@+id/gloves_shape_spinner"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:layout_marginEnd="10dp"
+                android:text="Sleeves" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/sleeves_array"
+                android:textColorHint="@color/brown"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:id="@+id/sleeves_shape_spinner"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:text="@string/height"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/height"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="@color/darkGrey"
+            android:fontFamily="casual"
+            android:inputType="numberDecimal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/your_height_et"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:text="@string/measurments"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:textColorHint="@color/darkGrey"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:hint="@string/bust"
+                android:id="@+id/bust_et"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/waist"
+                android:textColorHint="@color/darkGrey"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:id="@+id/waist_et"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColorHint="@color/darkGrey"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:inputType="numberDecimal"
+                android:hint="@string/hips"
+                android:id="@+id/hips_et"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:text="@string/fabric_distance"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint="@string/dist_bust"
+                android:textColorHint="@color/darkGrey"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:id="@+id/distance_bust_et"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/dist_waist"
+                android:textColorHint="@color/darkGrey"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:inputType="numberDecimal"
+                android:id="@+id/distance_waist_et"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/darkGrey"
+                android:textColor="@color/darkGrey"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:hint="@string/dist_hips"
+                android:id="@+id/distance_hips_et"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max_price"
+            android:layout_marginEnd="6dp"
+            android:textColor="@color/darkGrey"
+            android:fontFamily="casual"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:hint="@string/max_price"
+            android:textColorHint="@color/darkGrey"
+            android:textColor="@color/darkGrey"
+            android:fontFamily="casual"
+            android:id="@+id/maxprise_et"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColorHint="@color/darkGrey"
+            android:textColor="@color/darkGrey"
+            android:fontFamily="casual"
+            android:hint="@string/another_description"
+            android:id="@+id/another_description_et"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGrey"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:text="@string/final_date"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/calanderbtn"
+                    android:background="@drawable/selectorsavephoto"/>
+
+                <EditText
+                    android:id="@+id/date_et"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/darkGrey"
+                    android:textColor="@color/darkGrey"
+                    android:fontFamily="casual"
+                    android:hint="@string/date"
+                    android:editable="false"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="50dp"
+            android:text="@string/finish"
+            android:textColorHint="@color/brown"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:background="@drawable/selector_signin"
+            android:id="@+id/finish_btn"/>
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

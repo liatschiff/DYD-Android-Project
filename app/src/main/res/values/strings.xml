@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">DYD</string>
+
+    <string-array name="cleavageShape_array">
+        <item>low cat v</item>
+        <item>v neck</item>
+        <item>low cat round</item>
+        <item>closed round</item>
+        <item>knot front</item>
+        <item>high neck</item>
+        <item>one shoulder</item>
+        <item>cowl neck</item>
+        <item>strapless</item>
+    </string-array>
+
+    <string-array name="backShape_array">
+        <item>@string/open</item>
+        <item>@string/cut_out</item>
+        <item>@string/cross</item>
+        <item>@drawable/close</item>
+        <item>@string/lace_up</item>
+    </string-array>
+
+    <string-array name="highDress_array">
+        <item>@string/mini</item>
+        <item>@string/midi</item>
+        <item>@string/maxi</item>
+    </string-array>
+
+    <string-array name="fabrics_array">
+        <item>@string/velvet</item>
+        <item>@string/satin</item>
+        <item>@string/viscose</item>
+        <item>@string/polyester</item>
+        <item>@string/elastane</item>
+        <item>@string/leather</item>
+        <item>@string/cotton</item>
+        <item>@string/nylon</item>
+        <item>@string/acrylic</item>
+        <item>@string/silk</item>
+        <item>@string/polyamide</item>
+        <item>@string/glitters</item>
+        <item>@string/stones</item>
+        <item>@string/other</item>
+    </string-array>
+
+    <string-array name="sleeves_array">
+        <item>@string/without</item>
+        <item>@string/to_the_shoulder</item>
+        <item>@string/after_the_shoulder</item>
+        <item>@string/to_the_elbow</item>
+        <item>@string/long_sleeves</item>
+        <item>@string/other</item>
+    </string-array>
+
+    <string-array name="gloves_array">
+        <item>@string/without</item>
+        <item>@string/to_the_shoulder</item>
+        <item>@string/to_the_elbow</item>
+        <item>@string/to_the_hand</item>
+        <item>@string/other</item>
+
+    </string-array>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="first_time">First time?</string>
+    <string name="client">Client</string>
+    <string name="professional">Professional</string>
+    <string name="sign_up">Sign up</string>
+    <string name="guest">Guest</string>
+    <string name="type_your_message...">Type your message...</string>
+    <string name="hello">hello</string>
+    <string name="Your_Dream_Came_True">Make your dream real</string>
+    <string name="Design_Your_wedding_dress">Design Your wedding dress</string>
+    <string name="full_name">Full name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="repassword">Verify password</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="failed_details">Failed, make sure to fill all the fields correctly</string>
+    <string name="edit_title">Edit personal details</string>
+    <string name="upload_failed">upload failed</string>
+    <string name="permission_notice">You cant upload images without a permission</string>
+    <string name="loading">Loading please wait...</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_failed">Sign in failed</string>
+    <string name="choose">You must choose between professional and client</string>
+    <string name="thanks">Thanks</string>
+    <string name="empty_message">You can\'t send empty message</string>
+    <string name="new_msg">New Message</string>
+    <string name="failed">Failed</string>
+    <string name="choosing">"Choosing "</string>
+    <string name="to_make">to make your order</string>
+    <string name="not_able">and you will no longer be able to cancel your order</string>
+    <string name="will_start">will start working on your order as soon as possible</string>
+    <string name="no_offers">You have no offers at the moment</string>
+    <string name="no_preferences">No preferences</string>
+    <string name="cancel_order">Cancel your order</string>
+    <string name="are_sure_cancel">Are you sure you want to cancel your order?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="add_offer">Add Offer</string>
+    <string name="add_info">Add information</string>
+    <string name="add_review">Add Review</string>
+    <string name="no_image_selected">No image selected</string>
+    <string name="upload_progress">Upload in preogress</string>
+    <string name="price">Price</string>
+    <string name="no_active_orders">No active orders</string>
+    <string name="pick_to_call">Please pick days to call</string>
+    <string name="finished">Finished</string>
+    <string name="no_available_orders">No available orders</string>
+    <string name="delivery_call">Incoming call from our delivery please answer</string>
+    <string name="name_design">Name your design</string>
+    <string name="recommand">We recommend</string>
+    <string name="add_sketch">to add a drawing of your item</string>
+    <string name="add_fabrics">Add your prefer fabrics</string>
+    <string name="fabrics_btn">Prefer fabrics</string>
+    <string name="cleavage">Cleavage</string>
+    <string name="back">Back</string>
+    <string name="dress_length">Dress length</string>
+    <string name="gloves">Gloves</string>
+    <string name="sleeves">Sleeves</string>
+    <string name="height">Height</string>
+    <string name="measurments">Body measurements</string>
+    <string name="bust">Bust</string>
+    <string name="waist">Waist</string>
+    <string name="hips">Hips</string>
+    <string name="fabric_distance">Distance of fabric from body</string>
+    <string name="dist_bust">Dist bust</string>
+    <string name="dist_waist">Dist waist</string>
+    <string name="dist_hips">Dist hips</string>
+    <string name="max_price">Max price</string>
+    <string name="another_description">Another description</string>
+    <string name="final_date">Final date</string>
+    <string name="date">day/month/year</string>
+    <string name="finish">Finish</string>
+    <string name="wifi_problem">Wifi problem</string>
+    <string name="wifi_not_connected">Wifi is not connected please try again</string>
+    <string name="connect">Connect</string>
+    <string name="about_yourself">About yourself</string>
+    <string name="your_price">Your price</string>
+    <string name="short_des">Short description</string>
+    <string name="enter_price">Enter your price</string>
+    <string name="enter_short_des">Enter a short description about you</string>
+    <string name="your_review">Your review</string>
+    <string name="enter_review">Enter your review</string>
+    <string name="name_of_design">Design name</string>
+    <string name="cleavage_shape">"Cleavage shape: "</string>
+    <string name="back_shape">"Back shape: "</string>
+    <string name="offers">Offers</string>
+    <string name="view">View</string>
+    <string name="prev_works">Previous works</string>
+    <string name="reviews">Reviews</string>
+    <string name="add_image">Add image</string>
+    <string name="show">Show</string>
+    <string name="upload_image">Upload image</string>
+    <string name="update_details">Update personal details</string>
+    <string name="midi">Midi</string>
+    <string name="maxi">Maxi</string>
+    <string name="mini">Mini</string>
+    <string name="open">Open</string>
+    <string name="cut_out">Cut out</string>
+    <string name="cross">Cross</string>
+    <string name="close">Close</string>
+    <string name="lace_up">Lace up</string>
+    <string name="velvet">Velvet</string>
+    <string name="satin">Satin</string>
+    <string name="viscose">Viscose</string>
+    <string name="polyester">Polyester</string>
+    <string name="elastane">Elastane</string>
+    <string name="leather">Leather</string>
+    <string name="cotton">Cotton</string>
+    <string name="nylon">Nylon</string>
+    <string name="acrylic">Acrylic</string>
+    <string name="silk">Silk</string>
+    <string name="polyamide">Polyamide</string>
+    <string name="glitters">Glitters</string>
+    <string name="stones">Stones</string>
+    <string name="other">Other</string>
+    <string name="without">Without</string>
+    <string name="to_the_shoulder">To the shoulder</string>
+    <string name="after_the_shoulder">After the shoulder</string>
+    <string name="to_the_elbow">To the elbow</string>
+    <string name="long_sleeves">Long sleeves</string>
+    <string name="to_the_hand">To the hand</string>
+    <string name="watch_open_bids">Watch Open Bids</string>
+    <string name="desgin_your_dress">Design Your Dress</string>
+    <string name="prologue">About Us Our goal is to make you feel like a real princess.  You can design the wedding dress you always dreamed of. Accurate to your measurements and which no one wore before you.   Once you place your order, amazing tailors will give you bids and you will only have to choose the one you prefer. You can view previous reviews and works on his profile page. You can chat with him in chat.  Wish you good luck and lots of love DYD</string>
+    <string name="introdaction">Are you a talented tailor? This is your place!  Join us and enjoy a variety of clients looking for you to tailor their dream wedding dress for them.  You can look at open tenders and bids and chat with customers  Here for you DYD</string>
+    <string name="sleeves_sec">Sleeves:</string>
+    <string name="gloves_sec">Gloves:</string>
+    <string name="prefer_fabrics">Prefer fabrics:</string>
+    <string name="dress_length_sec">Dress length:</string>
+    <string name="height_sec">Height:</string>
+    <string name="mesurment_sec">Body measurments:</string>
+    <string name="bust_sec">Bust:</string>
+    <string name="waist_sec">Waist:</string>
+    <string name="hips_sec">Hips:</string>
+    <string name="fabric_dist_sec">"sidDistance of fabric from body: "</string>
+    <string name="another_des_sec">Another description:</string>
+    <string name="max_price_sec">Max price:</string>
+    <string name="final_date_sec">Final date:</string>
+    <string name="contact_me">Contact me</string>
+    <string name="password_match">Passwords do not match</string>
+    <string name="phone">phone_number</string>
+</resources>
